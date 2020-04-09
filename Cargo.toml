@@ -1,0 +1,10 @@
+[package]
+name = "repro"
+version = "0.1.0"
+authors = ["Thomas Orozco <torozco@fb.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.2.16", features = ["full"] }
+futures = { version = "0.3", features = ["async-await", "compat"] }
+futures-old = { package = "futures", version = "0.1" }
